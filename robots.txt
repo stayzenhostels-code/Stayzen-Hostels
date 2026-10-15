@@ -1,0 +1,9 @@
+# robots.txt — replace the domain with the real one before going live.
+User-agent: *
+Allow: /
+
+# Keep utility / placeholder files out of the index
+Disallow: /blog-post.html$
+
+# Point crawlers at the sitemap (use the full absolute URL)
+Sitemap: https://www.example.com/sitemap.xml

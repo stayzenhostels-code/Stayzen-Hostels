@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<!--
+ ============================================================
+ STAYZEN — HOME PAGE
+ Replace every [bracketed] placeholder with real information.
+ See README.md for a step-by-step editing guide.
+ HINDI LATER: duplicate this file as /hi/index.html,
+ change <html lang="en"> to <html lang="hi">, and translate
+ the visible text. Nothing else needs to change.
+ ============================================================
+-->
+<html lang="en">
+<head>
+<link rel="preload" as="image" href="images/hero-bg-2.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="images/hero-room-luxury.jpg" fetchpriority="high">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO: TITLE + DESCRIPTION (unique on every page) ===== -->
+<title>Girls Hostel &amp; PG in Indore | STAYZEN · Radhe Radhe · Little Angel</title>
+<meta name="description" content="Safe, premium girls hostels &amp; PGs in Indore across STAYZEN, Radhe Radhe, and Little Angel. Homestyle nutritious meals, CCTV security, attached washrooms &amp; warden care.">
+<link rel="canonical" href="https://www.example.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#195C55">
+<meta name="geo.region" content="IN-MP">
+<meta name="geo.placename" content="Indore">
+
+<!-- ===== OPEN GRAPH / SOCIAL ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="STAYZEN">
+<meta property="og:title" content="Girls Hostel &amp; PG in Indore | STAYZEN · Radhe Radhe · Little Angel">
+<meta property="og:description" content="Safe, premium girls student living across Indore — STAYZEN, Radhe Radhe, and Little Angel. Fresh meals, high-speed Wi-Fi, attached washrooms, and 24×7 security.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://www.example.com/images/logo.png">
+<meta property="og:locale" content="en_IN">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hostel in Indore | STAYZEN">
+<meta name="twitter:description" content="Thoughtfully curated student living across Indore — STAYZEN, Radhe Radhe, and Little Angel.">
+<meta name="twitter:image" content="https://www.example.com/images/logo.png">
+
+<!-- Uncomment when the Hindi version is live:
+<link rel="alternate" hreflang="en-in" href="https://www.example.com/">
+<link rel="alternate" hreflang="hi-in" href="https://www.example.com/hi/">
+<link rel="alternate" hreflang="x-default" href="https://www.example.com/">
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2-family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.png" type="image/png">
+
+<!-- ===== SCHEMA 1: LOCAL BUSINESS / HOSTEL — ONE ENTRY PER LOCATION =====
+   Fill in the real name, address, phone and GMB link for each of the 4 locations.
+   NOTE: deliberately no aggregateRating — add it only once you have real, verifiable reviews. -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://www.example.com/#organization",
+   "name": "STAYZEN",
+   "url": "https://www.example.com/",
+   "logo": "https://www.example.com/images/logo.png",
+   "email": "stayzenhostels@gmail.com",
+   "telephone": "us",
+   "sameAs": ["https://www.instagram.com/harji_nder1965/", "#"]
+  },
+  {
+   "@type": "Hostel",
+   "@id": "https://www.example.com/#location-1",
+   "name": "Stayzen Trishakti Girls Residency PG & Hostel",
+   "url": "https://www.example.com/",
+   "image": "https://www.example.com/images/room-deluxe-1.jpg",
+   "telephone": "us",
+   "priceRange": "₹8,300+",
+   "parentOrganization": { "@id": "https://www.example.com/#organization" },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Bholaram Ustad Marg, Bholaram Ustad Market, Sector A, Indrapuri Colony, Shivampuri Colony",
+    "addressLocality": "Bhanwarkuan, Indore",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "452001",
+    "addressCountry": "IN"
+   },
+   "areaServed": { "@type": "City", "name": "Indore" },
+   "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "CCTV surveillance", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Mess / canteen", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Power backup", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Housekeeping", "value": true }
+   ],
+   "hasMap": "https://maps.app.goo.gl/kR1MMXnXxMvpX5Bk6-g_st=aw"
+  },
+  {
+   "@type": "Hostel",
+   "@id": "https://www.example.com/#location-2",
+   "name": "Radhe Radhe – Little Angel Hostel",
+   "url": "https://www.example.com/",
+   "telephone": "us",
+   "priceRange": "Starting from Rs. 3600 for triple sharing to Rs. 13600 for single sharing",
+   "parentOrganization": { "@id": "https://www.example.com/#organization" },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Indore, Madhya Pradesh",
+    "addressLocality": "Little Angel Hostel",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "452001",
+    "addressCountry": "IN"
+   },
+   "areaServed": { "@type": "City", "name": "Indore" },
+   "hasMap": "https://maps.google.com/-q=Stayzen+Indore"
+  },
+  {
+   "@type": "Hostel",
+   "@id": "https://www.example.com/#location-3",
+   "name": "Radhe Radhe – Stayzen Hostel",
+   "url": "https://www.example.com/",
+   "telephone": "us",
+   "priceRange": "Starting from Rs. 3600 for triple sharing to Rs. 13600 for single sharing",
+   "parentOrganization": { "@id": "https://www.example.com/#organization" },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Indore, Madhya Pradesh",
+    "addressLocality": "Stayzen Hostel",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "452001",
+    "addressCountry": "IN"
+   },
+   "areaServed": { "@type": "City", "name": "Indore" },
+   "hasMap": "https://maps.google.com/-q=Stayzen+Indore"
+  },
+  {
+   "@type": "Hostel",
+   "@id": "https://www.example.com/#location-4",
+   "name": "Little Angel Girls Hostel",
+   "url": "https://www.example.com/",
+   "telephone": "us",
+   "priceRange": "₹3,600+",
+   "parentOrganization": { "@id": "https://www.example.com/#organization" },
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Geeta Nagar, Near Ajit Club, Geeta Bhawan",
+    "addressLocality": "Indore",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "452001",
+    "addressCountry": "IN"
+   },
+   "areaServed": { "@type": "City", "name": "Indore" },
+   "hasMap": "https://share.google/xhlwhdu8JZihfpCTg"
+  }
+ ]
+}
+</script>
+
+<!-- ===== SCHEMA 2: FAQ PAGE (answer-friendly for Google + AI assistants) ===== -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Which is the best girls hostel in Indore for students-",
+   "acceptedAnswer": { "@type": "Answer", "text": "STAYZEN runs 3 specialized girls hostel & PG stays across 3 locations in Indore for female students and working professionals — including Trishakti Girls Residency (Bhanwarkuan) and Little Angel Girls Hostel (Geeta Bhawan). The best location depends on your college or coaching — check the Our 4 Locations section or call us." }
+  },
+  {
+   "@type": "Question",
+   "name": "What is the monthly rent of a hostel in Indore-",
+   "acceptedAnswer": { "@type": "Answer", "text": "Rent depends on the location, brand and room type (single, double or triple sharing). Room-wise pricing for each of our hostels is: Starting from Rs. 3600 for triple sharing to Rs. 13600 for single sharing. Please call us or send a WhatsApp message for the current rate and availability." }
+  },
+  {
+   "@type": "Question",
+   "name": "Do the hostels provide mess food-",
+   "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every hostel has an in-house mess / canteen serving fresh vegetarian meals. The exact meal timings and the weekly menu are: Breakfast, Lunch, Evening Snacks, and Dinner are served daily." }
+  },
+  {
+   "@type": "Question",
+   "name": "Is the hostel safe for girls-",
+   "acceptedAnswer": { "@type": "Answer", "text": "Safety is our first priority. Our hostels have CCTV surveillance, controlled entry, on-site staff and a warden. Visitors and entry/exit rules are listed here: Available at the hostel office. Parents are welcome to visit and inspect the hostel before booking." }
+  },
+  {
+   "@type": "Question",
+   "name": "Can I visit the hostel before taking admission-",
+   "acceptedAnswer": { "@type": "Answer", "text": "Yes, we encourage it. Visit timings are 9:00 AM to 7:00 PM. Call us to book a visit slot at the location you are interested in." }
+  },
+  {
+   "@type": "Question",
+   "name": "What documents are required for hostel admission in Indore-",
+   "acceptedAnswer": { "@type": "Answer", "text": "Typically an ID proof, a college or company ID, and a parent or guardian contact. The final document list and any deposit or agreement requirement will be confirmed at the time of booking: Aadhar card, ID proof, and a standard security deposit." }
+  }
+ ]
+}
+</script>
+
+<!-- ===== SCHEMA 3: BREADCRUMBS ===== -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.example.com/" }
+ ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- =========================================================
+   ICON SPRITE — shared by every page. Add new icons here.
+   ========================================================= -->
+<svg class="svg-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.2-2.9 7.7-7 9-4.1-1.3-7-4.8-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-cctv" viewBox="0 0 24 24"><path d="M3 7l14-3 2 5-14 3z"/><path d="M5 12v4a2 2 0 002 2h3"/><path d="M17 9l3 1"/><circle cx="18" cy="18" r="2.5"/></symbol>
+  <symbol id="i-meal" viewBox="0 0 24 24"><path d="M6 3v8a2 2 0 004 0V3"/><path d="M8 11v10"/><path d="M16 3c-1.7 1.5-2.5 3.2-2.5 5.5S14.3 12 16 12h1V3z"/><path d="M17 12v9"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V7"/><path d="M3 12h13a5 5 0 015 5v1"/><path d="M3 18h18"/><circle cx="7.5" cy="9" r="2"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0120 0"/><path d="M5.5 12a10 10 0 0113 0"/><path d="M9 15.5a5 5 0 016 0"/><circle cx="12" cy="19" r="1"/></symbol>
+  <symbol id="i-power" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+  <symbol id="i-clean" viewBox="0 0 24 24"><path d="M4 20l6-6"/><path d="M10 14l4-4 6 6-4 4z"/><path d="M14 4v3M18 6l-2 2M20 10h-3"/></symbol>
+  <symbol id="i-bus" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="12" rx="2"/><path d="M4 11h16"/><path d="M7 16v3M17 16v3"/><circle cx="8" cy="19" r="1.5"/><circle cx="16" cy="19" r="1.5"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6 3h3l2 5-2 1a11 11 0 006 6l1-2 5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="11" r="2.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-3.5 3.1-5.5 7-5.5s7 2 7 5.5"/><path d="M16 5.5a3.5 3.5 0 010 6.6"/><path d="M18 20c0-2.4-.8-4.2-2-5.3"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h12v18H6a2 2 0 01-2-2z"/><path d="M8 3v18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10l9-7 9 7v10a1 1 0 01-1 1H4a1 1 0 01-1-1z"/><path d="M9 21v-6h6v6"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4c-9 0-14 4-14 10a6 6 0 006 6c6 0 8-5 8-16z"/><path d="M9 15c2-3 5-5 8-6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4 6.1 20.5l1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.3 14c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.7-.1a12 12 0 01-6.6-5.8c-.5-.9-.5-1.7-.4-2.1.1-.4.6-1.1 1-1.3.2-.1.6-.1.8 0l.9 1.5c.1.2 0 .4-.1.5l-.5.6c-.1.1-.2.3-.1.5.4.9 1.5 2 2.5 2.5.2.1.4.1.5-.1l.6-.6c.1-.1.3-.2.5-.1l1.5.8c.1.1.2.5.1.7z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9zm0 2a2.5 2.5 0 100 5 2.5 2.5 0 000-5zM17.5 6a1 1 0 110 2 1 1 0 010-2z"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.5 1.6-1.5h1.7V4.3c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.1v2.5H7.6V14h2.3v8z"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M21.6 7.5c-.2-.9-.9-1.6-1.8-1.8C18.2 5.3 12 5.3 12 5.3s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 9.1 2 12 2 12s0 2.9.4 4.5c.2.9.9 1.6 1.8 1.8 1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.5.4-4.5s0-2.9-.4-4.5zM10 15.2V8.8L15.5 12z"/></symbol>
+ </defs>
+</svg>
+
+<!-- =========================================================
+   HEADER (identical on all pages)
+   ========================================================= -->
+<header class="site-header">
+ <div class="container header-inner">
+  <a class="brand" href="index.html" aria-label="STAYZEN – Home">
+   <img decoding="async" src="images/logo.png" alt="STAYZEN Logo" class="brand-logo-img" width="44" height="44">
+   <span class="brand-name"><span class="brand-text-stay">STAY</span><span class="brand-text-zen">ZEN</span>
+    <span class="brand-sub">Hostels &amp; PGs · Indore</span>
+   </span>
+  </a>
+
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+   <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+   <span style="font-size:.85rem;margin-left:6px;letter-spacing:0.02em;">Menu</span>
+  </button>
+
+  <nav class="nav" id="primary-nav" aria-label="Main menu">
+   <ul class="nav-list">
+    <li><a class="is-active" href="index.html" aria-current="page">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="blog.html">Blog</a></li>
+   </ul>
+   <div class="nav-cta">
+    <a class="btn btn--tel" href="tel:+917024473732">
+     <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg> Call Now
+    </a>
+    <a class="btn btn--wa" href="https://wa.me/917024473732-text=Hello%2C%20I%20want%20hostel%20details%20in%20Indore" target="_blank" rel="noopener">
+     <svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> WhatsApp
+    </a>
+   </div>
+  </nav>
+ </div>
+</header>
+
+<main id="main">
+
+ <!-- =========================================================
+    HERO
+    ========================================================= -->
+ <section class="hero">
+  <div class="container hero-grid">
+   <div>
+    <span class="eyebrow">Girls Hostels &amp; PGs in Indore, Madhya Pradesh</span>
+    <h1 class="hero-h1">
+     <span class="brand-h1"><span class="brand-text-stay">STAY</span><span class="brand-text-zen">ZEN</span></span>
+     <span class="hero-h1-sub"><span class="brand-text-light" style="font-weight:800;">Radhe Radhe</span> <span style="opacity:0.6; margin:0 4px;">&amp;</span> <span class="brand-text-light" style="font-weight:800;">Little Angel</span></span>
+    </h1>
+    <p class="hero-description">
+     Where everyday comfort meets complete peace of mind. Experience thoughtfully designed student living across Indore’s top educational hubs — uniting <strong>STAYZEN</strong>, <strong>Radhe Radhe</strong>, and <strong>Little Angel</strong> with wholesome homestyle dining, high-speed connectivity, and calm, secure spaces crafted for your success.
+    </p>
+    <div class="hero-cta">
+     <a class="btn btn--wa" style="display:inline-flex; min-width: 250px; justify-content:center;" href="https://wa.me/917024473732-text=Hello%2C%20I%20want%20hostel%20details%20in%20Indore" target="_blank" rel="noopener">
+      <svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> WhatsApp Us
+     </a>
+    </div>
+    <p class="hero-note">
+     <svg class="icon" aria-hidden="true" style="width:18px;height:18px"><use href="#i-check"></use></svg>
+     Campus visits &amp; room viewings available daily — parents and students always welcome.
+    </p>
+
+    
+   </div>
+
+   <div>
+    <div class="hero-visual-wrap">
+     
+     </div>
+
+     <div class="card-img-wrap" style="aspect-ratio:4/3; box-shadow:0 16px 36px rgba(25,92,85,0.14); border-radius:var(--radius-l); border:1px solid var(--c-border); margin-bottom:0;">
+      <img decoding="async" src="images/hero-room-luxury.jpg" alt="STAYZEN Trishakti Girls Residency premium spacious room with clean bedding, study area, and modern interiors" loading="eager" width="1200" height="900">
+     </div>
+
+     <div class="hero-float-badge hero-float-badge--bottom">
+      <span class="badge-icon badge-icon--teal">🛡️</span>
+      <div>
+       <div style="font-size:.86rem; color:var(--c-text); font-weight:800;">100% Safe &amp; Verified</div>
+       <div style="font-size:.72rem; color:var(--c-muted); font-weight:600;">CCTV &amp; Dedicated Warden</div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- =========================================================
+    OUR 4 LOCATIONS
+    ========================================================= -->
+ <section class="section" aria-labelledby="locations-h">
+  <div class="container">
+   <div class="section__head ">
+    <span class="eyebrow">Our 4 Locations</span>
+    <h2 id="locations-h">Find the hostel nearest to you in Indore</h2>
+    <p>Explore our 4 locations in Indore across STAYZEN, Radhe Radhe, and Little Angel. Tap the map button for directions.</p>
+   </div>
+
+   <div class="grid grid--3">
+     <!-- Card 1 -->
+     <article class="card loc-card">
+      <div class="card-img-wrap" style="aspect-ratio:16/9; margin-bottom:10px;">
+       <img decoding="async" src="images/room-deluxe-1.jpg" alt="Stayzen Trishakti Girls Residency PG & Hostel Bhanwarkuan Indore" loading="lazy" width="600" height="340">
+      </div>
+      <div class="loc-name" style="margin-top:10px">
+       <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+       <h3 class="mb-0" style="font-size:1.05rem;">Trishakti Girls Residency</h3>
+      </div>
+      <p class="muted" style="font-size:.88rem;">STAYZEN • Bholaram Ustad Marg, Indrapuri &amp; Shivampuri Colony, Bhanwarkuan, Indore</p>
+      <a class="btn btn--outline btn--block" href="https://maps.app.goo.gl/kR1MMXnXxMvpX5Bk6-g_st=aw" target="_blank" rel="noopener">View on Google Map</a>
+     </article>
+     
+     <!-- Card 2 -->
+     <article class="card loc-card">
+      <div class="card-img-wrap" style="aspect-ratio:16/9; margin-bottom:10px;">
+       <img decoding="async" src="images/little-angel-main-gate.jpg" alt="Stayzen Little Angel Girls Hostel Main Gate Geeta Nagar Indore" loading="lazy" width="600" height="340">
+      </div>
+      <div class="loc-name" style="margin-top:10px">
+       <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+       <h3 class="mb-0" style="font-size:1.05rem;">Little Angel Girls Hostel</h3>
+      </div>
+      <p class="muted" style="font-size:.88rem;">STAYZEN • 60/F Bhaktavar Ram Nagar, Geeta Nagar, Near Ajit Club, Geeta Bhawan, Indore</p>
+      <a class="btn btn--outline btn--block" href="https://share.google/xhlwhdu8JZihfpCTg" target="_blank" rel="noopener">View on Google Map</a>
+     </article>
+
+     <!-- Card 3 -->
+     <article class="card loc-card">
+      <div class="card-img-wrap" style="aspect-ratio:16/9; margin-bottom:10px;">
+       <img decoding="async" src="images/stayzen-palasia-exterior.jpg" alt="Stayzen Hostel Girls Residency Palasia Square Indore" loading="lazy" width="600" height="340">
+      </div>
+      <div class="loc-name" style="margin-top:10px">
+       <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+       <h3 class="mb-0" style="font-size:1.05rem;">Stayzen Hostel</h3>
+      </div>
+      <p class="muted" style="font-size:.88rem;">STAYZEN • Girls Residency, Palasia Square, Indore</p>
+      <a class="btn btn--outline btn--block" href="https://maps.app.goo.gl/2HBev5CSWLvbo1r77" target="_blank" rel="noopener">View on Google Map</a>
+     </article>
+    </div>
+  </div>
+ </section>
+
+ <!-- =========================================================
+    PHOTO GALLERY
+    ========================================================= -->
+ <section class="section" aria-labelledby="gallery-h">
+  <div class="container">
+   <div class="section__head ">
+    <span class="eyebrow">Photo Gallery</span>
+    <h2 id="gallery-h">A look inside our hostels</h2>
+    <p>Real photos of rooms, the mess, common areas and the buildings will be added here.</p>
+   </div>
+
+   
+<div class="gallery-wrapper">
+ <button class="slider-btn slider-prev" aria-label="Previous" type="button">❮</button>
+ <div class="gallery">
+
+    <figure class="mb-0 ">
+     <div class="gallery-img-wrap">
+      <img decoding="async" src="images/hero-room-luxury.jpg" alt="Trishakti Girls Residency premium deluxe room with modern interiors" loading="lazy" width="800" height="600">
+     </div>
+     <figcaption>Deluxe Room · Trishakti</figcaption>
+    </figure>
+    <figure class="mb-0 ">
+     <div class="gallery-img-wrap">
+      <img decoding="async" src="images/trishakti-room-wardrobe.jpg" alt="Trishakti Girls Residency room with steel wardrobe, mirror and bedding" loading="lazy" width="800" height="600">
+     </div>
+     <figcaption>Wardrobe &amp; Twin Stay · Trishakti</figcaption>
+    </figure>
+    <figure class="mb-0 ">
+     <div class="gallery-img-wrap">
+      <img decoding="async" src="images/trishakti-bathroom-luxury.jpg" alt="Trishakti Girls Residency modern hygienic attached washroom" loading="lazy" width="800" height="600">
+     </div>
+     <figcaption>Luxury Attached Washroom</figcaption>
+    </figure>
+    <figure class="mb-0 ">
+     <div class="gallery-img-wrap">
+      <img decoding="async" src="images/little-angel-canteen-rooftop.jpg" alt="Little Angel Girls Hostel open space rooftop canteen and dining area" loading="lazy" width="800" height="600">
+     </div>
+     <figcaption>Open Space Canteen · Little Angel</figcaption>
+    </figure>
+    <figure class="mb-0 ">
+     <div class="gallery-img-wrap">
+      <img decoding="async" src="images/little-angel-library-study.jpg" alt="Little Angel Girls Hostel dedicated study cubicles and library Belfast House" loading="lazy" width="800" height="600">
+     </div>
+     <figcaption>Study Library &amp; Cubicles · Little Angel</figcaption>
+    </figure>
+    <figure class="mb-0 ">
+     <div class="gallery-img-wrap">
+      <img decoding="async" src="images/little-angel-lounge-living.jpg" alt="Little Angel Girls Hostel comfortable common lounge and living area" loading="lazy" width="800" height="600">
+     </div>
+     <figcaption>Student Lounge &amp; Living Area</figcaption>
+    </figure>
+    <figure class="mb-0 ">
+     <div class="gallery-img-wrap">
+      <img decoding="async" src="images/little-angel-main-gate.jpg" alt="Little Angel Girls Hostel exterior and main gate at Geeta Nagar Geeta Bhawan Indore" loading="lazy" width="800" height="600">
+     </div>
+     <figcaption>Main Gate &amp; Campus · Little Angel</figcaption>
+    </figure>
+    <figure class="mb-0 ">
+     <div class="gallery-img-wrap">
+      <img decoding="async" src="images/trishakti-office-sign.jpg" alt="Trishakti Girls Residency reception office sign at Bhanwarkuan Indore" loading="lazy" width="800" height="600">
+     </div>
+     <figcaption>Reception Office · Trishakti</figcaption>
+    </figure>
+   </div>
+  <button class="slider-btn slider-next" aria-label="Next" type="button">❯</button>
+   </div>
+</div>
+ </section>
+
+ <!-- =========================================================
+    ROOMS PREVIEW
+    ========================================================= -->
+ <section class="section section--tint" aria-labelledby="rooms-h">
+  <div class="container">
+   <div class="section__head ">
+    <span class="eyebrow">Rooms &amp; Sharing Options</span>
+    <h2 id="rooms-h">Choose the room that fits your budget</h2>
+    <p>Room types and rent vary by brand and location. Current rent for each room type will be published here.</p>
+   </div>
+
+   <div class="grid grid--3">
+    <article class="card " style="display:flex; flex-direction:column; justify-content:space-between;">
+     <div>
+      <div class="card-img-wrap">
+       <span class="room-badge-overlay">Premium Private</span>
+       <img decoding="async" src="images/room-1bed-single.jpg" alt="Stayzen Single Sharing 1 Bed Room with personal bed, wardrobe and window" loading="lazy" width="800" height="600">
+      </div>
+      <div class="room-tags">
+       <span class="room-tag">Airy Window</span>
+       <span class="room-tag">Private Wardrobe</span>
+       <span class="room-tag">Dedicated Study Desk</span>
+      </div>
+      <h3 style="margin-top:6px">Single Sharing Room (1 Bed)</h3>
+      <p class="muted">One bed, dedicated study table, personal wardrobe and complete privacy. Ideal for focused preparation &amp; absolute peace.</p>
+     </div>
+     <div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin:14px 0 12px;">
+       <span class="price-tag">₹8,600 – ₹13,600/mo</span>
+       <span style="font-size:.78rem; color:var(--c-muted); font-weight:600;">Mess Included</span>
+      </div>
+      <div style="display:flex; gap:8px;">
+       <a class="btn btn--wa" style="padding:10px 14px;" href="https://wa.me/917024473732-text=Hi%20Stayzen%2C%20I%20am%20interested%20in%20the%20Single%20Sharing%20Room" target="_blank" rel="noopener" aria-label="WhatsApp enquiry"><svg class="icon" aria-hidden="true" style="width:18px;height:18px;"><use href="#i-wa"></use></svg></a>
+      </div>
+     </div>
+    </article>
+
+    <article class="card " style="display:flex; flex-direction:column; justify-content:space-between;">
+     <div>
+      <div class="card-img-wrap">
+       <span class="room-badge-overlay">Most Popular</span>
+       <img decoding="async" src="images/room-2bed-double.jpg" alt="Trishakti Girls Residency Double Sharing 2 Bed Room with individual study desks and mirror" loading="lazy" width="800" height="600">
+      </div>
+      <div class="room-tags">
+       <span class="room-tag">Twin Beds</span>
+       <span class="room-tag">Individual Desks</span>
+       <span class="room-tag">Dressing Mirror</span>
+      </div>
+      <h3 style="margin-top:6px">Double Sharing Room (2 Bed)</h3>
+      <p class="muted">Two separate beds with individual study desks, personal storage and dressing mirror. The ideal balance of companionship and comfort.</p>
+     </div>
+     <div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin:14px 0 12px;">
+       <span class="price-tag">₹3,600 – ₹7,400/mo</span>
+       <span style="font-size:.78rem; color:var(--c-muted); font-weight:600;">Mess Included</span>
+      </div>
+      <div style="display:flex; gap:8px;">
+       <a class="btn btn--wa" style="padding:10px 14px;" href="https://wa.me/917024473732-text=Hi%20Stayzen%2C%20I%20am%20interested%20in%20the%20Double%20Sharing%20Room" target="_blank" rel="noopener" aria-label="WhatsApp enquiry"><svg class="icon" aria-hidden="true" style="width:18px;height:18px;"><use href="#i-wa"></use></svg></a>
+      </div>
+     </div>
+    </article>
+
+    <article class="card " style="display:flex; flex-direction:column; justify-content:space-between;">
+     <div>
+      <div class="card-img-wrap">
+       <span class="room-badge-overlay">Budget Friendly</span>
+       <img decoding="async" src="images/room-3bed-triple.jpg" alt="Trishakti Girls Residency Triple Sharing 3 Bed Room with study tables and storage" loading="lazy" width="800" height="600">
+      </div>
+      <div class="room-tags">
+       <span class="room-tag">3 Beds Setup</span>
+       <span class="room-tag">Study Desks</span>
+       <span class="room-tag">Attached Washroom</span>
+      </div>
+      <h3 style="margin-top:6px">Triple Sharing Room (3 Bed)</h3>
+      <p class="muted">Three beds per room with separate study desks, attached washroom and individual storage. Budget-friendly comfort with full mess &amp; amenities.</p>
+     </div>
+     <div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin:14px 0 12px;">
+       <span class="price-tag">₹3,600 – ₹7,400/mo</span>
+       <span style="font-size:.78rem; color:var(--c-muted); font-weight:600;">Mess Included</span>
+      </div>
+      <div style="display:flex; gap:8px;">
+       <a class="btn btn--wa" style="padding:10px 14px;" href="https://wa.me/917024473732-text=Hi%20Stayzen%2C%20I%20am%20interested%20in%20the%20Triple%20Sharing%20Room" target="_blank" rel="noopener" aria-label="WhatsApp enquiry"><svg class="icon" aria-hidden="true" style="width:18px;height:18px;"><use href="#i-wa"></use></svg></a>
+      </div>
+     </div>
+    </article>
+   </div>
+   <p class="center muted" style="margin-top:20px">
+    AC rooms may be available at selected locations. Ask us: <a href="tel:+917024473732">Call us</a>
+   </p>
+  </div>
+ </section>
+
+ <!-- =========================================================
+    HOSTEL HIGHLIGHTS (8 icon cards)
+    ========================================================= -->
+ <section class="section section--surface" aria-labelledby="highlights-h">
+  <div class="container">
+   <div class="section__head ">
+    <span class="eyebrow">Hostel Highlights</span>
+    <h2 id="highlights-h">Everything a student needs, under one roof</h2>
+    <p>Simple, dependable facilities across all our Indore hostels. Availability of each facility may vary slightly by location — please confirm at the time of booking.</p>
+   </div>
+
+   <div class="grid grid--4">
+    <article class="card ">
+     <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></div>
+     <h3>Safe &amp; Secure</h3>
+     <p class="muted mb-0">Controlled entry, on-site staff and a dedicated warden at every hostel.</p>
+    </article>
+    <article class="card ">
+     <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-cctv"></use></svg></div>
+     <h3>CCTV Surveillance</h3>
+     <p class="muted mb-0">Cameras covering the entrance and common areas, monitored round the clock.</p>
+    </article>
+    <article class="card ">
+     <div class="icon-badge icon-badge--accent"><svg class="icon" aria-hidden="true"><use href="#i-meal"></use></svg></div>
+     <h3>Mess / Canteen Food</h3>
+     <p class="muted mb-0">Fresh, hygienic vegetarian meals cooked in our in-house kitchen.</p>
+    </article>
+    <article class="card ">
+     <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-bed"></use></svg></div>
+     <h3>Clean Rooms</h3>
+     <p class="muted mb-0">Furnished rooms with bed, study table, storage and regular cleaning.</p>
+    </article>
+    <article class="card ">
+     <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-wifi"></use></svg></div>
+     <h3>Wi-Fi Internet</h3>
+     <p class="muted mb-0">High-speed internet for online classes, assignments and video calls.</p>
+    </article>
+    <article class="card ">
+     <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-power"></use></svg></div>
+     <h3>Power Backup</h3>
+     <p class="muted mb-0">Inverter / generator backup so lights and fans stay on during outages.</p>
+    </article>
+    <article class="card ">
+     <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-clean"></use></svg></div>
+     <h3>Housekeeping</h3>
+     <p class="muted mb-0">Daily or regular cleaning of rooms and shared areas, plus laundry support.</p>
+    </article>
+    <article class="card ">
+     <div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-bus"></use></svg></div>
+     <h3>Easy Transport Access</h3>
+     <p class="muted mb-0">Close to bus routes, colleges, coaching hubs and markets in Indore.</p>
+    </article>
+   </div>
+  </div>
+ </section>
+
+ <!-- =========================================================
+    KEY FACILITIES (detailed)
+    ========================================================= -->
+ <section class="section" aria-labelledby="facilities-h">
+  <div class="container">
+   <div class="section__head ">
+    <span class="eyebrow">Key Facilities</span>
+    <h2 id="facilities-h">Key facilities at our Indore hostels</h2>
+    <p>What you can expect in the monthly rent, in plain language.</p>
+   </div>
+
+   <div class="grid grid--3">
+    <article class="card card--pad-lg ">
+     <h3>Rooms &amp; Living</h3>
+     <ul class="spec-list">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Single, double and triple sharing room options</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> AC and non-AC rooms (varies by location)</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Bed, mattress, study table, chair and wardrobe</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Attached or common washrooms — Attached washrooms available</li>
+     </ul>
+    </article>
+
+    <article class="card card--pad-lg ">
+     <h3>Food &amp; Hygiene</h3>
+     <ul class="spec-list">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> In-house mess / canteen with daily fresh cooking</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Pure vegetarian menu, weekly rotation</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Drinking water — RO / water cooler</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Meal timings: Breakfast, Lunch, Evening Snacks, and Dinner are served daily</li>
+     </ul>
+    </article>
+
+    <article class="card card--pad-lg ">
+     <h3>Safety &amp; Support</h3>
+     <ul class="spec-list">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> CCTV in common areas and at the entrance</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Warden / caretaker on site</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Visitor policy and entry register: Available at the hostel office</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> First-aid kit and emergency contacts displayed</li>
+     </ul>
+    </article>
+
+    <article class="card card--pad-lg ">
+     <h3>Utilities &amp; Services</h3>
+     <ul class="spec-list">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> 24×7 water supply, hot water in winter</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Power backup for lights and fans</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Housekeeping and laundry support</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Parking: Safe two-wheeler parking available</li>
+     </ul>
+    </article>
+
+    <article class="card card--pad-lg ">
+     <h3>Study &amp; Common Areas</h3>
+     <ul class="spec-list">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> In-house dedicated Library with private study cubicles (Belfast House)</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Open-air terrace / rooftop canteen &amp; dining space</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Comfortable student lounge &amp; sofa living area</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Notice board &amp; 24×7 caretaker assistance</li>
+     </ul>
+    </article>
+
+    <article class="card card--pad-lg ">
+     <h3>What Is Not Included</h3>
+     <ul class="spec-list">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Any charges outside the monthly rent: None</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Security deposit / advance: 1 month rent (varies by location)</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Guest stay policy: Guests allowed in reception area</li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Full rules list is on the <a href="about.html">About Us</a> page</li>
+     </ul>
+    </article>
+   </div>
+  </div>
+ </section>
+
+ <!-- =========================================================
+    WHY CHOOSE US + TESTIMONIALS
+    ========================================================= -->
+ <section class="section section--surface" aria-labelledby="why-h">
+  <div class="container">
+   <div class="grid grid--2">
+    <div>
+     <span class="eyebrow">Why Choose Us</span>
+     <h2 id="why-h">A hostel group parents can trust</h2>
+     <ul class="trust-list">
+      <li>
+       <svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>
+       <div><strong>Safety comes first.</strong><br><span class="muted">CCTV, controlled entry, on-site warden and a clear visitor policy at every location.</span></div>
+      </li>
+      <li>
+       <svg class="icon" aria-hidden="true"><use href="#i-meal"></use></svg>
+       <div><strong>Home-style food, not hostel food.</strong><br><span class="muted">Fresh vegetarian cooking from our own kitchen, served on a fixed daily schedule.</span></div>
+      </li>
+      <li>
+       <svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg>
+       <div><strong>100% Dedicated Girls Hostels &amp; PGs.</strong><br><span class="muted">All 3 brands — STAYZEN, Radhe Radhe, and Little Angel — are safe, exclusive residences designed specifically for female students and professionals.</span></div>
+      </li>
+      <li>
+       <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+       <div><strong>4 locations across Indore.</strong><br><span class="muted">Pick the hostel closest to your college, coaching centre, hospital or office.</span></div>
+      </li>
+      <li>
+       <svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg>
+       <div><strong>One point of contact.</strong><br><span class="muted">Call or WhatsApp us and our team will guide you to the right location.</span></div>
+      </li>
+      <li>
+       <svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg>
+       <div><strong>Clear, written policies.</strong><br><span class="muted">Rent, deposit, rules and notice period are explained before you pay anything. Available at the hostel office</span></div>
+      </li>
+     </ul>
+     <a class="btn btn--primary" href="#enquiry">Enquire Now <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+    </div>
+
+    <div>
+     <h3>What residents &amp; parents say</h3>
+     <p class="muted">Genuine feedback from students &amp; parents living at our Indore residences.</p>
+
+     <div class="grid" style="gap:14px">
+      <article class="testimonial">
+       <span class="stars" aria-hidden="true">★★★★★</span>
+       <blockquote>"The rooms are very clean and properly maintained. Security and mess food quality are top-notch compared to other PGs in Bhanwarkuan. Peace of mind for studies."</blockquote>
+       <p class="who mb-0">Pooja Sharma <span>Student · Stayzen Trishakti Girls Residency</span></p>
+      </article>
+      <article class="testimonial">
+       <span class="stars" aria-hidden="true">★★★★★</span>
+       <blockquote>"As a parent from outside Indore, safety was my main concern. The warden, CCTV security and transparent rules made us choose Stayzen without hesitation."</blockquote>
+       <p class="who mb-0">Rajesh Verma <span>Parent · Indore Residence</span></p>
+      </article>
+      <article class="testimonial">
+       <span class="stars" aria-hidden="true">★★★★★</span>
+       <blockquote>"Very close to coaching centres, fast Wi-Fi and healthy food on time. Study table and attached washroom setup is exactly what I needed."</blockquote>
+       <p class="who mb-0">Ananya Patel <span>Student · Indore</span></p>
+      </article>
+     </div>
+     <p class="muted" style="margin-top:14px">Read or leave a review on our Google Business Profile: <a href="https://maps.app.goo.gl/kR1MMXnXxMvpX5Bk6-g_st=aw" target="_blank" rel="noopener">Trishakti Girls Residency on Google Maps</a></p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- =========================================================
+    FINAL CTA STRIP + ENQUIRY FORM
+    ========================================================= -->
+ <section class="section cta-strip" id="enquiry" aria-labelledby="enquiry-h">
+  <div class="container">
+   <div class="grid grid--2">
+    <div>
+     <span class="eyebrow eyebrow--accent">Enquire Now</span>
+     <h2 id="enquiry-h">Tell us where you study or work — we will find your hostel</h2>
+     <p class="lead">Send us your details and our team will call you back with room availability and rent at the location closest to you. Or reach us instantly:</p>
+     <div class="btn-row" style="margin-bottom:18px">
+      <a class="btn btn--accent" href="tel:+917024473732"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg> Call us</a>
+      <a class="btn btn--wa" href="https://wa.me/917024473732-text=Hello%2C%20I%20want%20hostel%20details%20in%20Indore" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> WhatsApp Us</a>
+     </div>
+     <ul class="spec-list" style="color:#DCEAEF">
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> <span style="color:#DCEAEF">Reply during 9:00 AM to 7:00 PM</span></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> <span style="color:#DCEAEF">Free hostel visit before booking</span></li>
+      <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> <span style="color:#DCEAEF">Rent, deposit and rules explained in writing</span></li>
+     </ul>
+    </div>
+
+    <div>
+     <!-- No backend connected yet. See README.md → "Connect the enquiry form". -->
+     <form class="form" method="post" action="" data-placeholder-form>
+      <h3 style="margin-top:0">Enquiry form</h3>
+      <div class="field">
+       <label for="home-name">Your Name *</label>
+       <input id="home-name" name="name" type="text" autocomplete="name" placeholder="Full name" required>
+      </div>
+      <div class="field">
+       <label for="home-phone">Phone Number *</label>
+       <input id="home-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile number" required>
+      </div>
+      <div class="field">
+       <label for="home-location">Preferred Location *</label>
+       <select id="home-location" name="location" required>
+        <option value="">Select a location</option>
+        <option value="Trishakti Girls Residency">Trishakti Girls Residency (Bhanwarkuan)</option>
+        <option value="Little Angel Girls Hostel">Little Angel Girls Hostel (Geeta Bhawan)</option>
+        <option value="Radhe Radhe Residency 1">Radhe Radhe Girls Stay – Location 2</option>
+        <option value="Radhe Radhe Residency 2">Radhe Radhe Girls Stay – Location 3</option>
+       </select>
+      </div>
+      <div class="field">
+       <label for="home-message">Message</label>
+       <textarea id="home-message" name="message" placeholder="Room type, move-in date, or any question"></textarea>
+       <span class="hint">Optional. Mention your college, coaching centre or office.</span>
+      </div>
+      <button class="btn btn--primary btn--block" type="submit">
+       <svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg> Submit Enquiry
+      </button>
+      <p class="form-note">By submitting this form you agree to be contacted by STAYZEN about your enquiry.</p>
+      <p class="form-status" role="status" aria-live="polite"></p>
+     </form>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- =========================================================
+    FAQ (matches the FAQPage schema in <head>)
+    ========================================================= -->
+ <section class="section" aria-labelledby="faq-h">
+  <div class="container">
+   <div class="section__head ">
+    <span class="eyebrow">FAQ</span>
+    <h2 id="faq-h">Frequently asked questions about hostels in Indore</h2>
+    <p>Short, direct answers. If your question is not here, just call us.</p>
+   </div>
+
+   <div class="faq">
+    <details open>
+     <summary>Which is the best girls hostel in Indore for students-</summary>
+     <p>STAYZEN operates trusted, 100% dedicated girls residences across prime student zones in Indore — including <strong>Trishakti Girls Residency</strong> in Bhanwarkuan (Bholaram Ustad Marg) and <strong>Little Angel Girls Hostel</strong> in Geeta Bhawan (Geeta Nagar, near Ajit Club). Both offer 24×7 security, CCTV, biometric/warden care, homestyle mess meals, and quiet study areas.</p>
+    </details>
+    <details>
+     <summary>What is the monthly rent of the hostels in Indore-</summary>
+     <p>Rent includes wholesome homestyle mess meals and all standard facilities:
+      <br>• <strong>Double &amp; Triple Sharing Rooms</strong>: ₹3,600 to ₹7,400 / month
+      <br>• <strong>Single Sharing Rooms (Private 1-Bed)</strong>: ₹8,600 to ₹13,600 / month
+      <br><em>(AC and non-AC options available based on room selection). Call or WhatsApp us to verify current slot availability.</em></p>
+    </details>
+    <details>
+     <summary>Do the hostels provide in-house mess and canteen facilities-</summary>
+     <p>Yes. Every hostel features an in-house kitchen serving fresh, hygienic, pure vegetarian meals daily. Little Angel Girls Hostel also features a scenic open-space rooftop dining canteen for students to eat and relax in fresh air.</p>
+    </details>
+    <details>
+     <summary>What study and library facilities are available-</summary>
+     <p>Along with individual study desks and chairs in each room, Little Angel Girls Hostel offers a dedicated in-house <strong>Study Library with private reading cubicles (Belfast House)</strong> so students can prepare for competitive exams in total silence.</p>
+    </details>
+    <details>
+     <summary>How is security ensured for girls-</summary>
+     <p>Safety is non-negotiable. Both Trishakti Girls Residency and Little Angel Girls Hostel have round-the-clock CCTV surveillance at all entry points and corridors, on-site lady wardens, visitor entry logbooks, gated security, and emergency contact support on every floor.</p>
+    </details>
+    <details>
+     <summary>Can parents and students visit the hostel before admission-</summary>
+     <p>Yes, daily visits are warmly welcomed between 9:00 AM and 8:00 PM. Parents and students can inspect the rooms, washrooms, mess kitchen, and study library in person. Contact us via Call or WhatsApp to schedule a viewing slot.</p>
+    </details>
+   </div>
+  </div>
+ </section>
+
+</main>
+
+<!-- =========================================================
+   FOOTER (identical on all pages — edit once per page)
+   ========================================================= -->
+<footer class="site-footer">
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <div class="brand" style="color:#fff">
+     <img decoding="async" src="images/logo.png" alt="STAYZEN Logo" class="brand-logo-img brand-logo-img--footer" width="44" height="44">
+     <span class="brand-name" style="color:#fff"><span style="color:#fff">STAY</span><span style="color:var(--c-accent)">ZEN</span></span>
+    </div>
+    <p class="footer-about" style="margin-top:12px">Safe, clean and comfortable hostel &amp; PG living for students and professionals across 3 locations in Indore, Madhya Pradesh.</p>
+    <div class="social">
+     <a href="https://www.instagram.com/harji_nder1965/" aria-label="Instagram – STAYZEN" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg></a>
+     <a href="#" aria-label="Facebook – STAYZEN" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"></use></svg></a>
+     <a href="#" aria-label="YouTube – STAYZEN" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></a>
+    </div>
+   </div>
+
+   <nav aria-label="Quick links">
+    <h3>Quick Links</h3>
+    <ul class="footer-list">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="about.html">About Us</a></li>
+     <li><a href="contact.html">Contact Us</a></li>
+     <li><a href="blog.html">Blog</a></li>
+    </ul>
+   </nav>
+
+   <nav aria-label="Our locations">
+    <h3>Our Locations</h3>
+     <ul class="footer-list">
+      <li><a href="https://maps.app.goo.gl/kR1MMXnXxMvpX5Bk6-g_st=aw" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Trishakti Girls Residency (Bhanwarkuan)</a></li>
+      <li><a href="https://share.google/xhlwhdu8JZihfpCTg" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Little Angel Girls Hostel (Geeta Bhawan)</a></li>
+      <li><a href="https://maps.app.goo.gl/2HBev5CSWLvbo1r77" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> Stayzen Hostel (Palasia Square)</a></li>
+     </ul>
+    </nav>
+
+   <div>
+    <h3>Contact</h3>
+    <ul class="footer-list">
+     <li><a href="tel:+917024473732"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg> 7024473732</a></li>
+     <li><a href="https://wa.me/917024473732" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> +917024473732</a></li>
+     <li><a href="mailto:stayzenhostels@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg> stayzenhostels@gmail.com</a></li>
+     <li><span class="muted" style="color:#B9CDD5"><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg> 9:00 AM to 7:00 PM</span></li>
+    </ul>
+   </div>
+  </div>
+
+  <div class="footer-bottom">
+   <p class="mb-0">© <span data-year>2026</span> STAYZEN. All rights reserved.</p>
+   <p class="mb-0">Website by Digitalads</p>
+  </div>
+  <p class="footer-note">Girls Hostels in Indore · Girls PG Indore · Student Residencies Indore · STAYZEN · Radhe Radhe · Little Angel</p>
+ </div>
+</footer>
+
+<!-- Sticky mobile Call / WhatsApp bar -->
+
+
+<script src="main.js" defer></script>
+<!-- ===== SCROLL ANIMATION SCRIPT ===== -->
+<script>
+  const gallery = document.querySelector('.gallery');
+ if (gallery) {
+  let scrollAmount = 0;
+  setInterval(() => {
+   if (window.innerWidth <= 719) {
+    const figure = gallery.querySelector('figure');
+    const itemWidth = figure - figure.clientWidth + 16 : 300;
+    scrollAmount += itemWidth;
+    if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
+     scrollAmount = 0;
+    }
+    gallery.scrollTo({
+     top: 0,
+     left: scrollAmount,
+     behavior: 'smooth'
+    });
+   }
+  }, 3000);
+ }
+</script>
+
+
+
+
+
+<a href="https://wa.me/917024473732-text=Hello%2C%20I%20want%20hostel%20details%20in%20Indore" class="floating-wa" target="_blank" rel="noopener" aria-label="WhatsApp Us">
+ <svg class="icon" aria-hidden="true" style="width:28px;height:28px;"><use href="#i-wa"></use></svg>
+</a>
+
+</body>
+</html>
