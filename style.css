@@ -680,3 +680,448 @@ figcaption{ font-size:.78rem; color:var(--c-muted); margin-top:6px; text-align:c
 @media (min-width: 720px) {
   .slider-btn { display: none; }
 }
+
+
+
+/* ============================================================
+   STAYZEN HOSTEL INTERACTIVE ACCORDION & LIGHTBOX
+   ============================================================ */
+.stayzen-hub-card {
+  background: #FFFFFF;
+  border: 2px solid var(--c-primary);
+  border-radius: var(--radius-l);
+  box-shadow: 0 10px 30px rgba(25,92,85,0.10);
+  margin-bottom: 44px;
+  overflow: hidden;
+  transition: all .3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.stayzen-hub-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 28px;
+  background: linear-gradient(135deg, #F8FAF9 0%, #EDF5F4 100%);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: background .2s ease;
+}
+
+.stayzen-hub-trigger:hover,
+.stayzen-hub-trigger:focus-visible {
+  background: #E5F0EE;
+}
+
+.stayzen-hub-trigger__info .hub-pill {
+  display: inline-block;
+  background: var(--c-primary);
+  color: #fff;
+  font-size: 0.76rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: 6px;
+}
+
+.stayzen-hub-trigger__info .hub-title {
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  color: var(--c-primary-dark);
+  margin: 0 0 4px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stayzen-hub-trigger__info .hub-sub {
+  color: var(--c-text-soft);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.stayzen-hub-trigger__action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.hub-btn-label {
+  display: inline-block;
+  background: var(--c-primary);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgba(25,92,85,0.2);
+  transition: transform .2s ease;
+}
+
+.stayzen-hub-trigger:hover .hub-btn-label {
+  transform: translateY(-1px);
+}
+
+.hub-icon-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1.5px solid var(--c-primary);
+  color: var(--c-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: transform .3s ease;
+}
+
+.stayzen-hub-card.is-open .hub-icon-arrow {
+  transform: rotate(180deg);
+}
+
+.stayzen-hub-content {
+  display: none;
+  padding: 30px 28px 36px;
+  border-top: 1px solid var(--c-border);
+  animation: fadeInHub .35s ease forwards;
+}
+
+.stayzen-hub-card.is-open .stayzen-hub-content {
+  display: block;
+}
+
+@keyframes fadeInHub {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Photo Gallery Strip */
+.stayzen-photo-strip-wrap {
+  position: relative;
+  margin: 24px 0 32px;
+}
+
+.stayzen-photo-strip {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 12px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-primary) var(--c-surface-2);
+}
+
+.stayzen-photo-strip::-webkit-scrollbar {
+  height: 6px;
+}
+
+.stayzen-photo-strip::-webkit-scrollbar-track {
+  background: var(--c-surface-2);
+  border-radius: 10px;
+}
+
+.stayzen-photo-strip::-webkit-scrollbar-thumb {
+  background: var(--c-primary);
+  border-radius: 10px;
+}
+
+.stayzen-photo-item {
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  border: 1px solid var(--c-border);
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.stayzen-photo-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.stayzen-photo-item img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.stayzen-photo-caption {
+  padding: 8px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--c-text);
+  background: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stayzen-photo-zoom-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(25,92,85,0.85);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+}
+
+/* Feature Points Grid */
+.stayzen-points-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 20px 0 32px;
+}
+
+.stayzen-point-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-m);
+  padding: 14px 16px;
+}
+
+.stayzen-point-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.stayzen-point-text strong {
+  display: block;
+  font-size: 0.94rem;
+  color: var(--c-text);
+  margin-bottom: 2px;
+}
+
+.stayzen-point-text span {
+  font-size: 0.82rem;
+  color: var(--c-muted);
+  line-height: 1.4;
+  display: block;
+}
+
+/* Pricing Grid */
+.stayzen-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin: 20px 0 32px;
+}
+
+.stayzen-price-card {
+  background: #fff;
+  border: 1.5px solid var(--c-border);
+  border-radius: var(--radius-m);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.stayzen-price-card.is-popular {
+  border-color: var(--c-accent);
+  box-shadow: 0 6px 20px rgba(194,96,61,0.12);
+}
+
+.stayzen-price-tag {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--c-primary);
+  margin: 10px 0 14px;
+}
+
+.stayzen-price-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.stayzen-price-features li {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* FAQ Details in Hub */
+.stayzen-faq-list details {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-s);
+  margin-bottom: 10px;
+  padding: 14px 18px;
+}
+
+.stayzen-faq-list summary {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--c-primary-dark);
+  cursor: pointer;
+}
+
+.stayzen-faq-list p {
+  margin: 10px 0 0;
+  font-size: 0.88rem;
+  color: var(--c-text-soft);
+  line-height: 1.55;
+}
+
+/* Fullscreen Lightbox */
+.stayzen-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 999999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.stayzen-lightbox.is-visible {
+  display: flex;
+}
+
+.stayzen-lightbox__stage {
+  max-width: 90vw;
+  max-height: 82vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.stayzen-lightbox__img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform .25s ease;
+  user-select: none;
+}
+
+.stayzen-lightbox__img.is-zoomed {
+  max-width: none;
+  max-height: none;
+  transform: scale(1.75);
+  cursor: grab;
+}
+
+.stayzen-lightbox__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+  z-index: 10;
+}
+
+.stayzen-lightbox__close:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.stayzen-lightbox__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+  z-index: 10;
+}
+
+.stayzen-lightbox__nav:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.stayzen-lightbox__prev { left: 24px; }
+.stayzen-lightbox__next { right: 24px; }
+
+.stayzen-lightbox__toolbar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(0,0,0,0.65);
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 0.85rem;
+  backdrop-filter: blur(4px);
+  z-index: 10;
+}
+
+.stayzen-lightbox__zoom-btn {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 768px) {
+  .stayzen-hub-trigger {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px 20px;
+  }
+  .stayzen-hub-trigger__action {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .stayzen-lightbox__prev { left: 8px; }
+  .stayzen-lightbox__next { right: 8px; }
+}

@@ -333,121 +333,296 @@
  <!-- =========================================================
     FLAGSHIP SHOWCASE & OUR LOCATIONS (GOOGLE MY BUSINESS)
     ========================================================= -->
- <section class="section" aria-labelledby="locations-h" style="padding-top:32px;">
+ <section class="section" aria-labelledby="locations-h" style="padding-top:24px;">
   <div class="container">
 
    <!-- ==========================================
-      1. GRAND OPENING FLAGSHIP SHOWCASE FUNNEL
-      (Placed right above Google My Business links)
+      1. INTERACTIVE STAYZEN HOSTEL HUB ACCORDION
+      (Default: Cleanly Collapsed; Click to expand)
       ========================================== -->
-   <div class="card card--pad-lg flagship-showcase" style="background:linear-gradient(135deg, #F8FAF9 0%, #EDF5F4 100%); border:2px solid var(--c-primary); border-radius:var(--radius-l); box-shadow:0 12px 32px rgba(25,92,85,0.12); padding:32px 28px; margin-bottom:44px; position:relative; overflow:hidden;">
+   <div class="stayzen-hub-card" id="stayzen-hostel-hub">
     
-    <!-- TOP BADGES ROW -->
-    <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-bottom:20px;">
-     <div style="display:inline-flex; align-items:center; gap:8px; background:var(--c-accent); color:#fff; font-size:.82rem; font-weight:800; padding:7px 16px; border-radius:50px; text-transform:uppercase; letter-spacing:.04em; box-shadow:0 4px 12px rgba(194,96,61,0.25);">
-      <span>🎉 GRAND OPENING</span>
-      <span style="opacity:0.7;">•</span>
-      <span>11TH OCTOBER 2026</span>
+    <!-- ACCORDION TRIGGER HEADER -->
+    <button class="stayzen-hub-trigger" type="button" aria-expanded="false" aria-controls="stayzen-hub-content" id="stayzen-trigger-btn">
+     <div class="stayzen-hub-trigger__info">
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px; flex-wrap:wrap;">
+       <span class="hub-pill">Flagship Campus</span>
+       <span style="display:inline-flex; align-items:center; gap:4px; background:#EBF7F2; color:#17684F; font-size:.76rem; font-weight:800; padding:4px 10px; border-radius:50px; border:1px solid #A8DECC;">
+        🚗 Dedicated Car &amp; Bike Parking Available
+       </span>
+      </div>
+      <h2 class="hub-title">STAYZEN Hostel</h2>
+      <p class="hub-sub">Palasia Square • Near Allen Coaching, Indore</p>
      </div>
-     <div style="display:inline-flex; align-items:center; gap:8px; background:#fff; border:1.5px solid var(--c-primary); color:var(--c-primary); font-size:.84rem; font-weight:800; padding:7px 16px; border-radius:50px; box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-      <span style="font-size:1.15rem;">🚗</span> CAR PARKING ALSO AVAILABLE
+     <div class="stayzen-hub-trigger__action">
+      <span class="hub-btn-label">Click to View Photos, Pricing &amp; Details ▾</span>
+      <span class="hub-icon-arrow">▾</span>
      </div>
-    </div>
+    </button>
 
-    <div class="grid grid--2" style="align-items:center; gap:32px;">
-     
-     <!-- LEFT: DETAILS & HIGHLIGHTS -->
-     <div>
-      <span class="eyebrow" style="color:var(--c-accent); font-weight:800; margin-bottom:6px; display:inline-block;">Brand New Flagship Hostel</span>
-      <h2 style="font-size:clamp(1.65rem, 3.4vw, 2.35rem); color:var(--c-primary); margin-bottom:8px; line-height:1.2;">
-       STAYZEN Girls Residency
-      </h2>
-      <p style="font-size:1.05rem; font-weight:700; color:var(--c-text); margin-bottom:8px;">
-       Our Brand New Premium Student Hostel
-      </p>
-      <p style="display:flex; align-items:center; gap:8px; color:var(--c-text-soft); font-weight:600; font-size:.95rem; margin-bottom:18px;">
-       <svg class="icon" aria-hidden="true" style="color:var(--c-accent); flex-shrink:0; width:20px; height:20px;"><use href="#i-pin"></use></svg>
-       <span>Palasia Square, Near Allen Coaching, Indore</span>
-      </p>
+    <!-- EXPANDABLE CONTENT -->
+    <div class="stayzen-hub-content" id="stayzen-hub-content">
 
-      <!-- BRAND UNIFICATION STATEMENT -->
-      <div style="background:#fff; border-left:4px solid var(--c-primary); border-radius:var(--radius-s); padding:14px 18px; margin-bottom:20px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
-       <p style="font-size:.88rem; line-height:1.55; color:var(--c-text); margin:0;">
-        <strong>Our existing hostels</strong> — formerly <em>Shree Radhey Radhey</em>, <em>Trishakti Girls Residency</em> &amp; <em>Little Angel Girls Hostel</em> — are now all unified as <strong>STAYZEN Girls Residency</strong>.
-       </p>
-       <p style="font-size:.82rem; color:var(--c-primary); font-weight:700; margin:6px 0 0; letter-spacing:.02em;">
-        A home away from home. A future ready for you.
-       </p>
+     <!-- TOP HIGHLIGHT BAR -->
+     <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin-bottom:20px; padding-bottom:16px; border-bottom:1px solid var(--c-border);">
+      <div style="display:flex; align-items:center; gap:8px;">
+       <svg class="icon" aria-hidden="true" style="color:var(--c-accent); width:20px; height:20px;"><use href="#i-pin"></use></svg>
+       <span style="font-weight:700; color:var(--c-text);">Palasia Square, Near Allen Coaching, Indore</span>
       </div>
-
-      <!-- 4 PILLARS GRID -->
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(180px, 1fr)); gap:12px; margin-bottom:24px;">
-       <div style="display:flex; align-items:flex-start; gap:10px;">
-        <span style="font-size:1.3rem; line-height:1;">🛏️</span>
-        <div>
-         <strong style="font-size:.88rem; display:block; color:var(--c-text);">Comfortable Rooms</strong>
-         <span class="muted" style="font-size:.78rem;">AC &amp; Non-AC with attached bath</span>
-        </div>
-       </div>
-       <div style="display:flex; align-items:flex-start; gap:10px;">
-        <span style="font-size:1.3rem; line-height:1;">📚</span>
-        <div>
-         <strong style="font-size:.88rem; display:block; color:var(--c-text);">Study-Friendly Spaces</strong>
-         <span class="muted" style="font-size:.78rem;">Silent desks &amp; 150 Mbps Wi-Fi</span>
-        </div>
-       </div>
-       <div style="display:flex; align-items:flex-start; gap:10px;">
-        <span style="font-size:1.3rem; line-height:1;">🛡️</span>
-        <div>
-         <strong style="font-size:.88rem; display:block; color:var(--c-text);">Secure &amp; Safe</strong>
-         <span class="muted" style="font-size:.78rem;">24x7 CCTV &amp; Resident Warden</span>
-        </div>
-       </div>
-       <div style="display:flex; align-items:flex-start; gap:10px;">
-        <span style="font-size:1.3rem; line-height:1;">✨</span>
-        <div>
-         <strong style="font-size:.88rem; display:block; color:var(--c-text);">Modern Amenities</strong>
-         <span class="muted" style="font-size:.78rem;">4 homestyle meals, power backup &amp; lift</span>
-        </div>
-       </div>
+      <div style="display:inline-flex; align-items:center; gap:6px; background:var(--c-primary-light); color:var(--c-primary-dark); font-size:.84rem; font-weight:800; padding:6px 14px; border-radius:50px; border:1px solid var(--c-primary);">
+       <span>🚗</span> DEDICATED CAR &amp; BIKE PARKING AVAILABLE
       </div>
-
-      <!-- CTAS -->
-      <div class="btn-row" style="gap:10px;">
-       <a class="btn btn--wa" style="padding:11px 18px; font-weight:700;" href="https://wa.me/917024473732?text=Hello%20STAYZEN%2C%20I%20am%20interested%20in%20the%20new%20Stayzen%20Girls%20Residency%20at%20Palasia%20Square" target="_blank" rel="noopener">
-        <svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> WhatsApp Inquiry
-       </a>
-       <a class="btn btn--tel" style="padding:11px 18px;" href="tel:+917024473732">
-        <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg> Call +91 7024473732
-       </a>
-       <a class="btn btn--outline" style="padding:11px 18px;" href="https://maps.app.goo.gl/2HBev5CSWLvbo1r77" target="_blank" rel="noopener">
-        <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> View on Google Maps
-       </a>
-      </div>
-
      </div>
 
-     <!-- RIGHT: REAL 4K VISUAL SHOWCASE -->
-     <div>
-      <div style="position:relative; border-radius:var(--radius-m); overflow:hidden; box-shadow:0 8px 24px rgba(0,0,0,0.12); border:1px solid var(--c-border); background:#fff;">
-       <img decoding="async" src="images/stayzen-palasia-building-wide.jpg" alt="STAYZEN Girls Residency New Premium Building Exterior Palasia Square Indore" style="width:100%; height:auto; display:block; aspect-ratio:16/9; object-fit:cover;">
-       <div style="position:absolute; bottom:12px; left:12px; background:rgba(25,92,85,0.92); color:#fff; font-size:.78rem; font-weight:700; padding:5px 12px; border-radius:6px; backdrop-filter:blur(4px); box-shadow:0 2px 6px rgba(0,0,0,0.2);">
-        📍 Palasia Square, Indore • Near Allen Coaching
+     <!-- 1. PHOTO GALLERY (HORIZONTAL SCROLL & LIGHTBOX CLICK-TO-ZOOM) -->
+     <div style="margin-bottom:24px;">
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; flex-wrap:wrap; gap:8px;">
+       <h3 style="font-size:1.15rem; color:var(--c-primary-dark); margin:0;">
+        📸 Campus Photo Gallery <span style="font-size:.82rem; font-weight:500; color:var(--c-muted);">(Scroll horizontally &bull; Tap any photo to zoom in full screen)</span>
+       </h3>
+      </div>
+
+      <div class="stayzen-photo-strip">
+       <!-- Photo 1: Wide Building & Gate -->
+       <div class="stayzen-photo-item" data-full="images/stayzen-palasia-building-wide.jpg" data-caption="STAYZEN Girls Residency - Grand Building &amp; Golden Entrance Gate (Palasia Square)">
+        <img src="images/stayzen-palasia-building-wide.jpg" alt="STAYZEN Girls Residency Building Exterior Palasia Square Indore" loading="lazy">
+        <span class="stayzen-photo-zoom-icon">🔍 Zoom</span>
+        <div class="stayzen-photo-caption">Grand Building &amp; Main Gate</div>
+       </div>
+
+       <!-- Photo 2: Gated Facade & Parking -->
+       <div class="stayzen-photo-item" data-full="images/stayzen-palasia-facade.jpg" data-caption="Gated Campus Entrance, Palm Trees &amp; Secure Car/Bike Parking Zone">
+        <img src="images/stayzen-palasia-facade.jpg" alt="STAYZEN Palasia Gated Campus Entrance and Car Parking" loading="lazy">
+        <span class="stayzen-photo-zoom-icon">🔍 Zoom</span>
+        <div class="stayzen-photo-caption">Gated Campus &amp; Car Parking</div>
+       </div>
+
+       <!-- Photo 3: Multi-Story Exterior HD -->
+       <div class="stayzen-photo-item" data-full="images/stayzen-palasia-exterior-hd.jpg" data-caption="Multi-Story Modern Architectural Building Facade with Gold Details">
+        <img src="images/stayzen-palasia-exterior-hd.jpg" alt="STAYZEN Palasia Multi-Story Building Facade" loading="lazy">
+        <span class="stayzen-photo-zoom-icon">🔍 Zoom</span>
+        <div class="stayzen-photo-caption">Architectural Building Facade</div>
+       </div>
+
+       <!-- Photo 4: Executive Room -->
+       <div class="stayzen-photo-item" data-full="images/stayzen-palasia-room-executive-hd.jpg" data-caption="Executive Bedroom with Solid Wood Bed, Wardrobe &amp; Dedicated Study Desk">
+        <img src="images/stayzen-palasia-room-executive-hd.jpg" alt="STAYZEN Palasia Executive Bedroom with Wardrobe and Desk" loading="lazy">
+        <span class="stayzen-photo-zoom-icon">🔍 Zoom</span>
+        <div class="stayzen-photo-caption">Executive Room &amp; Study Desk</div>
+       </div>
+
+       <!-- Photo 5: Deluxe Twin Room -->
+       <div class="stayzen-photo-item" data-full="images/stayzen-palasia-room-deluxe-hd.jpg" data-caption="Deluxe Twin Sharing Room with Split AC, Curtains &amp; Ample Natural Light">
+        <img src="images/stayzen-palasia-room-deluxe-hd.jpg" alt="STAYZEN Palasia Deluxe Twin Room with AC" loading="lazy">
+        <span class="stayzen-photo-zoom-icon">🔍 Zoom</span>
+        <div class="stayzen-photo-caption">Deluxe Room with Split AC</div>
+       </div>
+
+       <!-- Photo 6: Room Interior View 1 -->
+       <div class="stayzen-photo-item" data-full="images/stayzen-palasia-room1.jpg" data-caption="Comfortable Furnished Student Room with Spring Mattress &amp; Storage">
+        <img src="images/stayzen-palasia-room1.jpg" alt="STAYZEN Palasia Furnished Student Bedroom" loading="lazy">
+        <span class="stayzen-photo-zoom-icon">🔍 Zoom</span>
+        <div class="stayzen-photo-caption">Furnished Bedroom Interior</div>
+       </div>
+
+       <!-- Photo 7: Room Interior View 2 -->
+       <div class="stayzen-photo-item" data-full="images/stayzen-palasia-room2.png" data-caption="Spacious Twin Sharing Layout with Natural Ventilation">
+        <img src="images/stayzen-palasia-room2.png" alt="STAYZEN Palasia Twin Sharing Room Layout" loading="lazy">
+        <span class="stayzen-photo-zoom-icon">🔍 Zoom</span>
+        <div class="stayzen-photo-caption">Twin Sharing Living Space</div>
+       </div>
+
+       <!-- Photo 8: Study Corner & Desk -->
+       <div class="stayzen-photo-item" data-full="images/stayzen-palasia-single.jpg" data-caption="Study-Friendly Ergonomic Desk &amp; Private Reading Corner">
+        <img src="images/stayzen-palasia-single.jpg" alt="STAYZEN Study Desk and Reading Corner" loading="lazy">
+        <span class="stayzen-photo-zoom-icon">🔍 Zoom</span>
+        <div class="stayzen-photo-caption">Private Study Station</div>
+       </div>
+      </div>
+     </div>
+
+     <!-- 2. POINT-BY-POINT KEY HIGHLIGHTS -->
+     <h3 style="font-size:1.15rem; color:var(--c-primary-dark); margin:0 0 12px;">
+      📋 Point-by-Point Campus Features &amp; Facilities
+     </h3>
+     <div class="stayzen-points-grid">
+      <!-- Point 1: Location -->
+      <div class="stayzen-point-card">
+       <span class="stayzen-point-icon">📍</span>
+       <div class="stayzen-point-text">
+        <strong>Prime Palasia Location (Near Allen)</strong>
+        <span>1-minute walk from Allen Coaching (Palasia campus). Zero travel stress for NEET &amp; JEE aspirants.</span>
        </div>
       </div>
 
-      <!-- 3 THUMBNAILS -->
-      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin-top:10px;">
-       <div style="border-radius:var(--radius-s); overflow:hidden; border:1px solid var(--c-border); background:#fff; aspect-ratio:4/3; box-shadow:0 2px 6px rgba(0,0,0,0.06);">
-        <img decoding="async" src="images/stayzen-grand-opening-poster.jpg" alt="STAYZEN Girls Residency Grand Opening Invitation Poster" style="width:100%; height:100%; object-fit:cover;">
-       </div>
-       <div style="border-radius:var(--radius-s); overflow:hidden; border:1px solid var(--c-border); background:#fff; aspect-ratio:4/3; box-shadow:0 2px 6px rgba(0,0,0,0.06);">
-        <img decoding="async" src="images/stayzen-palasia-room-executive-hd.jpg" alt="STAYZEN Girls Residency Executive Room with Wardrobe and Desk" style="width:100%; height:100%; object-fit:cover;">
-       </div>
-       <div style="border-radius:var(--radius-s); overflow:hidden; border:1px solid var(--c-border); background:#fff; aspect-ratio:4/3; box-shadow:0 2px 6px rgba(0,0,0,0.06);">
-        <img decoding="async" src="images/stayzen-palasia-room-deluxe-hd.jpg" alt="STAYZEN Girls Residency Deluxe Room with Split AC" style="width:100%; height:100%; object-fit:cover;">
+      <!-- Point 2: Car Parking -->
+      <div class="stayzen-point-card" style="border-color:var(--c-primary); background:#F4FAF8;">
+       <span class="stayzen-point-icon">🚗</span>
+       <div class="stayzen-point-text">
+        <strong style="color:var(--c-primary-dark);">Dedicated Car &amp; Bike Parking</strong>
+        <span>Secure on-campus four-wheeler and two-wheeler parking inside gated premises with 24x7 CCTV.</span>
        </div>
       </div>
+
+      <!-- Point 3: Rooms -->
+      <div class="stayzen-point-card">
+       <span class="stayzen-point-icon">🛏️</span>
+       <div class="stayzen-point-text">
+        <strong>Comfortable AC &amp; Non-AC Rooms</strong>
+        <span>Single, double &amp; triple sharing with box beds, spring mattresses, private cupboards &amp; study desks.</span>
+       </div>
+      </div>
+
+      <!-- Point 4: Meals -->
+      <div class="stayzen-point-card">
+       <span class="stayzen-point-icon">🍽️</span>
+       <div class="stayzen-point-text">
+        <strong>4 Homestyle Pure Veg Meals Daily</strong>
+        <span>Nutritious breakfast, lunch, evening snacks with tea, and dinner cooked fresh in a clean kitchen.</span>
+       </div>
+      </div>
+
+      <!-- Point 5: Security -->
+      <div class="stayzen-point-card">
+       <span class="stayzen-point-icon">🛡️</span>
+       <div class="stayzen-point-text">
+        <strong>3-Tier 24×7 Safety &amp; Lady Warden</strong>
+        <span>Full CCTV surveillance, biometric fingerprint entry, resident female warden, and strict visitor verification.</span>
+       </div>
+      </div>
+
+      <!-- Point 6: Wi-Fi & Power -->
+      <div class="stayzen-point-card">
+       <span class="stayzen-point-icon">⚡</span>
+       <div class="stayzen-point-text">
+        <strong>150+ Mbps High-Speed Wi-Fi &amp; Power Backup</strong>
+        <span>Seamless high-speed optical fiber for online lectures and generator backup for zero study disruptions.</span>
+       </div>
+      </div>
+
+      <!-- Point 7: Hygiene & Water -->
+      <div class="stayzen-point-card">
+       <span class="stayzen-point-icon">🧺</span>
+       <div class="stayzen-point-text">
+        <strong>Daily Housekeeping &amp; RO Water</strong>
+        <span>Daily sanitized rooms &amp; washrooms, multi-stage RO drinking water on every floor, and laundry support.</span>
+       </div>
+      </div>
+
+      <!-- Point 8: Brand Unification -->
+      <div class="stayzen-point-card">
+       <span class="stayzen-point-icon">🏢</span>
+       <div class="stayzen-point-text">
+        <strong>Unified STAYZEN Network</strong>
+        <span>Formerly Shree Radhey Radhey, Trishakti Girls Residency &amp; Little Angel — now all unified under STAYZEN.</span>
+       </div>
+      </div>
+     </div>
+
+     <!-- 3. TRANSPARENT PRICING GRID -->
+     <h3 style="font-size:1.15rem; color:var(--c-primary-dark); margin:24px 0 12px;">
+      💰 Transparent Monthly Rent &amp; Inclusions
+     </h3>
+     <div class="stayzen-pricing-grid">
+      <!-- Triple Sharing -->
+      <div class="stayzen-price-card">
+       <div>
+        <span class="pill">Budget Friendly</span>
+        <h4 style="margin:10px 0 4px; font-size:1.15rem;">Triple Sharing</h4>
+        <p style="font-size:.82rem; color:var(--c-muted); margin:0;">Ideal for peer group study &amp; comfort</p>
+        <div class="stayzen-price-tag">₹7,500 <span style="font-size:.85rem; font-weight:500; color:var(--c-muted);">/ month</span></div>
+        <ul class="stayzen-price-features">
+         <li>✓ 4 Homestyle Meals Daily</li>
+         <li>✓ 150 Mbps Wi-Fi &amp; Generator Backup</li>
+         <li>✓ Daily Room Housekeeping</li>
+         <li>✓ Car &amp; Two-Wheeler Parking</li>
+         <li>✓ RO Water &amp; 24x7 Security</li>
+        </ul>
+       </div>
+       <a class="btn btn--outline btn--block" href="https://wa.me/917024473732?text=Hello%20STAYZEN%2C%20I%20am%20inquiring%20about%20Triple%20Sharing%20at%20Palasia%20Hostel" target="_blank" rel="noopener">Inquire Triple</a>
+      </div>
+
+      <!-- Double Sharing (Popular) -->
+      <div class="stayzen-price-card is-popular">
+       <div>
+        <span class="pill" style="background:var(--c-accent); color:#fff;">Most Popular</span>
+        <h4 style="margin:10px 0 4px; font-size:1.15rem;">Double Deluxe (Twin)</h4>
+        <p style="font-size:.82rem; color:var(--c-muted); margin:0;">Balanced privacy, AC &amp; spacious comfort</p>
+        <div class="stayzen-price-tag" style="color:var(--c-accent);">₹9,500 – ₹11,500 <span style="font-size:.85rem; font-weight:500; color:var(--c-muted);">/ month</span></div>
+        <ul class="stayzen-price-features">
+         <li>✓ AC &amp; Non-AC Options Available</li>
+         <li>✓ Attached Washroom &amp; Balcony</li>
+         <li>✓ 4 Homestyle Meals Daily</li>
+         <li>✓ Dedicated Study Desks &amp; Wardrobes</li>
+         <li>✓ Car &amp; Two-Wheeler Parking</li>
+         <li>✓ 150 Mbps Wi-Fi &amp; Full Power Backup</li>
+        </ul>
+       </div>
+       <a class="btn btn--primary btn--block" href="https://wa.me/917024473732?text=Hello%20STAYZEN%2C%20I%20am%20inquiring%20about%20Double%20Sharing%20at%20Palasia%20Hostel" target="_blank" rel="noopener">Inquire Double Deluxe</a>
+      </div>
+
+      <!-- Single Private -->
+      <div class="stayzen-price-card">
+       <div>
+        <span class="pill">Private Sanctuary</span>
+        <h4 style="margin:10px 0 4px; font-size:1.15rem;">Single Private Room</h4>
+        <p style="font-size:.82rem; color:var(--c-muted); margin:0;">100% focused study for serious aspirants</p>
+        <div class="stayzen-price-tag">₹13,000 – ₹15,500 <span style="font-size:.85rem; font-weight:500; color:var(--c-muted);">/ month</span></div>
+        <ul class="stayzen-price-features">
+         <li>✓ Full Private AC Room</li>
+         <li>✓ Personal Study Corner &amp; Ergonomic Chair</li>
+         <li>✓ 4 Homestyle Meals Daily</li>
+         <li>✓ Attached Sanitized Bathroom</li>
+         <li>✓ Car &amp; Two-Wheeler Parking</li>
+         <li>✓ Zero Distractions &amp; Full Security</li>
+        </ul>
+       </div>
+       <a class="btn btn--outline btn--block" href="https://wa.me/917024473732?text=Hello%20STAYZEN%2C%20I%20am%20inquiring%20about%20Single%20Room%20at%20Palasia%20Hostel" target="_blank" rel="noopener">Inquire Single Room</a>
+      </div>
+     </div>
+
+     <!-- 4. FREQUENTLY ASKED QUESTIONS (FAQS) -->
+     <h3 style="font-size:1.15rem; color:var(--c-primary-dark); margin:24px 0 12px;">
+      ❓ Frequently Asked Questions
+     </h3>
+     <div class="stayzen-faq-list">
+      <details>
+       <summary>Where is Stayzen Hostel located in Indore?</summary>
+       <p>Our flagship property is located at Palasia Square, right near Allen Career Institute, Indore. It is situated in a safe, central residential neighbourhood with quick access to Anand Bazaar, Old Palasia, and Geeta Bhawan.</p>
+      </details>
+      <details>
+       <summary>Is car and two-wheeler parking available?</summary>
+       <p>Yes. Stayzen Hostel features dedicated on-campus four-wheeler car parking as well as secure two-wheeler parking inside our gated premises, monitored 24x7 with CCTV cameras. This provides total convenience for residents and visiting parents.</p>
+      </details>
+      <details>
+       <summary>What meals are included in the mess facility?</summary>
+       <p>We provide 4 fresh, homestyle vegetarian meals every single day: breakfast with tea/milk, nutritious lunch, evening snacks with tea, and wholesome dinner. A weekly rotating menu ensures dietary balance and taste.</p>
+      </details>
+      <details>
+       <summary>How far is Stayzen Hostel from Allen Coaching Palasia?</summary>
+       <p>It is just a 1-minute walk (approx. 100 meters) from Allen Coaching Palasia campus. Students save daily commuting costs and valuable study hours.</p>
+      </details>
+      <details>
+       <summary>What are the security measures and gate closing timings?</summary>
+       <p>The hostel is protected by 24×7 CCTV surveillance, biometric fingerprint access, and a dedicated full-time resident female warden. The main campus gate is safely locked at night, and late entries require prior guardian permission.</p>
+      </details>
+      <details>
+       <summary>How do I book a room or visit the hostel?</summary>
+       <p>Parents and students are welcome to visit any day between 9:00 AM and 7:00 PM. Call us at +91 7024473732 or message on WhatsApp to check live room availability and get a personal guided walkthrough.</p>
+      </details>
+     </div>
+
+     <!-- BOTTOM ACTIONS ROW -->
+     <div class="btn-row" style="margin-top:28px; padding-top:20px; border-top:1px solid var(--c-border); justify-content:center;">
+      <a class="btn btn--wa" style="padding:12px 24px; font-weight:700;" href="https://wa.me/917024473732?text=Hello%20STAYZEN%2C%20I%20am%20interested%20in%20STAYZEN%20Girls%20Residency%20Palasia%20Square" target="_blank" rel="noopener">
+       <svg class="icon" aria-hidden="true"><use href="#i-wa"></use></svg> WhatsApp STAYZEN
+      </a>
+      <a class="btn btn--tel" style="padding:12px 20px;" href="tel:+917024473732">
+       <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg> Call +91 7024473732
+      </a>
+      <a class="btn btn--outline" style="padding:12px 20px;" href="https://maps.app.goo.gl/2HBev5CSWLvbo1r77" target="_blank" rel="noopener">
+       <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg> View Palasia on Google Maps
+      </a>
      </div>
 
     </div>
@@ -456,12 +631,12 @@
 
    <!-- ==========================================
       2. OUR 3 LOCATIONS: GOOGLE MY BUSINESS PROFILES
-      (Placed right below the featured showcase)
+      (Placed right below the STAYZEN Hostel Hub)
       ========================================== -->
-   <div class="section__head" style="margin-bottom:24px;">
+   <div class="section__head" style="margin-bottom:24px; text-align:center;">
     <span class="eyebrow">Google Verified Profiles</span>
     <h2 id="locations-h" style="margin-bottom:8px;">Find the hostel nearest to you in Indore</h2>
-    <p>Explore all 3 verified STAYZEN locations across Bhanwarkuan, Geeta Bhawan, and Palasia Square. Tap the map button for live reviews, photos, and GPS directions.</p>
+    <p style="max-width:700px; margin:0 auto;">Explore all 3 verified STAYZEN locations across Bhanwarkuan, Geeta Bhawan, and Palasia Square. Tap the map button for live student reviews, photos, and GPS directions.</p>
    </div>
 
    <div class="grid grid--3">
@@ -506,6 +681,28 @@
     </div>
   </div>
  </section>
+
+ <!-- =========================================================
+    FULLSCREEN LIGHTBOX MODAL (PHOTO ZOOM & SCROLL)
+    ========================================================= -->
+ <div class="stayzen-lightbox" id="stayzen-lightbox" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+  <button class="stayzen-lightbox__close" id="stayzen-lb-close" aria-label="Close Lightbox" type="button">&times;</button>
+  <button class="stayzen-lightbox__nav stayzen-lightbox__prev" id="stayzen-lb-prev" aria-label="Previous Photo" type="button">&#10094;</button>
+  
+  <div class="stayzen-lightbox__stage">
+   <img class="stayzen-lightbox__img" id="stayzen-lb-img" src="" alt="Full view photo">
+  </div>
+  
+  <button class="stayzen-lightbox__nav stayzen-lightbox__next" id="stayzen-lb-next" aria-label="Next Photo" type="button">&#10095;</button>
+  
+  <div class="stayzen-lightbox__toolbar">
+   <span id="stayzen-lb-counter">1 / 8</span>
+   <span style="opacity:0.4;">|</span>
+   <span id="stayzen-lb-caption">Photo Caption</span>
+   <span style="opacity:0.4;">|</span>
+   <button class="stayzen-lightbox__zoom-btn" id="stayzen-lb-zoom" type="button">&#128269; Zoom</button>
+  </div>
+ </div>
 
  <!-- =========================================================
     PHOTO GALLERY
